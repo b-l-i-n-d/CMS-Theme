@@ -4,7 +4,67 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+
+        <link rel="stylesheet" href="./css/tailwind.css" />
+
+        <title>Blog Site</title>
     </head>
-    <body></body>
+    <body>
+        <nav class="max-w-6xl mx-auto px-4 fixed top-0 inset-0 font-ubuntu">
+            <div
+                class="
+                    flex
+                    justify-between
+                    items-center
+                    h-16
+                    transition-all
+                    duration-300
+                "
+            >
+                <div class="text-xl font-semibold">
+                    <a href="#">Blog</a>
+                </div>
+
+                <div class="text-lg font-normal space-x-3">
+                    <div class="inline-block">
+                        <a class="menu-item" href="#">Home</a>
+                    </div>
+                    <div class="inline-block">
+                        <a class="menu-item" href="#">About</a>
+                    </div>
+                    <div class="inline-block">
+                        <a class="menu-item" href="#">Author</a>
+                    </div>
+                    <div class="inline-block">
+                        <a class="menu-item" href="#">Posts</a>
+                    </div>
+                    <div class="inline-block">
+                        <a class="menu-item" href="#">Technology</a>
+                    </div>
+                    <div class="inline-block">
+                        <a class="menu-item" href="#">Travel</a>
+                    </div>
+                    <div class="inline-block">
+                        <a class="menu-item" href="#">Contact</a>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-200 rounded-full relative p-1">
+                    <input
+                        class="rounded-lg px-2 outline-none bg-transparent"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button class="absolute right-3" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <script
+            src="https://kit.fontawesome.com/1ae402c3f5.js"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
