@@ -10,9 +10,12 @@
         <title>Blog Site</title>
     </head>
     <body>
-        <nav class="max-w-6xl mx-auto px-4 fixed top-0 inset-0 font-ubuntu">
+        <nav class="fixed top-0 inset-x-0 font-ubuntu bg-white">
             <div
                 class="
+                    max-w-6xl
+                    mx-auto
+                    px-4
                     flex
                     justify-between
                     items-center
@@ -21,11 +24,21 @@
                     duration-300
                 "
             >
-                <div class="text-xl font-semibold">
+                <div class="text-lg font-semibold">
                     <a href="#">Blog</a>
                 </div>
 
-                <div class="text-lg font-normal space-x-3">
+                <div
+                    class="
+                        text-base
+                        lg:text-xl
+                        font-normal
+                        md:space-x-1
+                        lg:space-x-3
+                        hidden
+                        md:block
+                    "
+                >
                     <div class="inline-block">
                         <a class="menu-item" href="#">Home</a>
                     </div>
@@ -59,8 +72,191 @@
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
+                <div class="menu-btn text-2xl md:hidden cursor-pointer z-50">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <!-- mobile view -->
+                <ul
+                    class="
+                        mobile-menu
+                        md:hidden
+                        fixed
+                        h-screen
+                        w-full
+                        -right-full
+                        top-0
+                        bg-white
+                        text-center
+                        pt-20
+                        transition-all
+                        duration-300
+                    "
+                >
+                    <li class="block">
+                        <a
+                            href="#home"
+                            class="menu-item inline-block my-5 text-2xl"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="block">
+                        <a
+                            href="#about"
+                            class="menu-item inline-block my-5 text-2xl"
+                            >About</a
+                        >
+                    </li>
+                    <li class="block">
+                        <a
+                            href="#skills"
+                            class="menu-item inline-block my-5 text-2xl"
+                            >Skills</a
+                        >
+                    </li>
+                    <li class="block">
+                        <a
+                            href="#experience"
+                            class="menu-item inline-block my-5 text-2xl"
+                            >Experience</a
+                        >
+                    </li>
+                    <li class="block">
+                        <a
+                            href="#education"
+                            class="menu-item inline-block my-5 text-2xl"
+                            >Education</a
+                        >
+                    </li>
+                    <li class="block">
+                        <a
+                            href="#projects"
+                            class="menu-item inline-block my-5 text-2xl"
+                            >Projects</a
+                        >
+                    </li>
+                    <li class="block">
+                        <a
+                            href="#contact"
+                            class="menu-item inline-block my-5 text-2xl"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
             </div>
         </nav>
+
+        <section class="hero-section bg-gray-100 font-ubuntu">
+            <div
+                class="
+                    max-w-screen-2xl
+                    mx-auto
+                    flex flex-col-reverse
+                    sm:flex-row
+                    justify-center
+                    items-center
+                    max-h-screen
+                    md:space-x-10
+                    lg:space-x-20
+                "
+            >
+                <div
+                    class="
+                        flex-1
+                        space-y-5
+                        sm:space-y-10
+                        pl-4
+                        lg:pl-24
+                        p-5
+                        md:p-0
+                    "
+                >
+                    <button
+                        class="bg-secondary px-6 py-2 text-white rounded-full"
+                    >
+                        Lorem.
+                    </button>
+
+                    <div
+                        class="
+                            font-ubuntu
+                            text-xl
+                            sm:text-2xl
+                            md:text-3xl
+                            lg:text-4xl
+                            font-bold
+                        "
+                    >
+                        Lorem ipsum dolor sit amet adipisicing elit. Quos,
+                        harum?
+                    </div>
+                    <div class="font-poppins text-sm">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Et fuga repudiandae numquam? Ipsam officia
+                        repudiandae minus eligendi. Ex, recusandae quis?
+                    </div>
+
+                    <div class="flex space-x-5 items-center text-sm">
+                        <div
+                            class="h-10 w-10 ring-2 ring-offset-2 rounded-full"
+                        >
+                            <img
+                                class="object-cover rounded-full h-full w-full"
+                                src="./assets/avatar.jpg"
+                                alt="avatar"
+                            />
+                        </div>
+                        <div>
+                            <div>
+                                By
+                                <span class="font-medium">Lorem, ipsum.</span>
+                            </div>
+                            <div>February 29, 2024</div>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-0.5 bg-secondary"></div>
+
+                    <div class="flex items-center justify-between text-sm">
+                        <div class="flex items-center space-x-2">
+                            <div class="bg-red-300 rounded-xl">
+                                <i class="far fa-bookmark p-3"></i>
+                            </div>
+                            <span>2 min read</span>
+                        </div>
+
+                        <div class="flex space-x-2">
+                            <div class="bg-yellow-200 rounded-full px-3 py-2">
+                                <i class="far fa-eye pr-1"></i>
+                                <span>5.7k</span>
+                            </div>
+                            <div class="bg-red-300 rounded-full px-3 py-2">
+                                <i class="far fa-heart pr-1"></i>
+                                <span>4.1k</span>
+                            </div>
+
+                            <div class="bg-yellow-200 rounded-full px-3 py-2">
+                                <i class="far fa-comments pr-1"></i>
+                                <span>2.1k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img
+                        class="
+                            object-cover
+                            h-screen
+                            w-full
+                            rounded-xl
+                            md:rounded-none
+                        "
+                        src="./assets/hero_image.jpg"
+                        alt="hero_image"
+                    />
+                </div>
+            </div>
+        </section>
 
         <script
             src="https://kit.fontawesome.com/1ae402c3f5.js"
