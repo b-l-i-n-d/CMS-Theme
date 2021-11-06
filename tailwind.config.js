@@ -11,11 +11,20 @@ module.exports = {
 			colors: {
 				primary: '#FE2638',
 				secondary: '#EBB308',
-			}
+			},
+
+            width: {
+               "1/2-4": "calc(50% - 16px)",
+               "1/3-4": "calc(33% - 16px)",
+               "2/3-4": "calc(66% - 16px)",
+            }
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            display: ['group-hover'],
+            width: ['hover']
+        },
     },
     plugins: [],
 };
