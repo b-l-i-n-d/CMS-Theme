@@ -4,451 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/tailwind.css" />
 
-        <link rel="stylesheet" href="./css/tailwind.css" />
-        <link rel="stylesheet" href="./css/owl.carousel.min.css" />
-        <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-
-        <title>Blog Site</title>
+        <title>Paragraph</title>
     </head>
     <body>
-        <nav class="fixed top-0 inset-x-0 font-ubuntu bg-white z-50">
-            <div
-                class="
-                    max-w-6xl
-                    mx-auto
-                    px-4
-                    flex
-                    justify-between
-                    items-center
-                    h-16
-                    transition-all
-                    duration-300
-                "
-            >
-                <div class="text-xl lg:text-3xl font-semibold">
-                    <a href="#">Blog</a>
-                </div>
-
-                <div
-                    class="
-                        text-base
-                        lg:text-lg
-                        font-normal
-                        md:space-x-1
-                        lg:space-x-3
-                        hidden
-                        md:block
-                    "
-                >
-                    <div class="inline-block">
-                        <a class="menu-item" href="#">Home</a>
-                    </div>
-                    <div class="inline-block">
-                        <a class="menu-item" href="#">About</a>
-                    </div>
-                    <div class="inline-block">
-                        <a class="menu-item" href="#">Author</a>
-                    </div>
-                    <div class="inline-block">
-                        <a class="menu-item" href="#">Posts</a>
-                    </div>
-                    <div class="inline-block">
-                        <a class="menu-item" href="#">Technology</a>
-                    </div>
-                    <div class="inline-block">
-                        <a class="menu-item" href="#">Travel</a>
-                    </div>
-                    <div class="inline-block">
-                        <a class="menu-item" href="#">Contact</a>
-                    </div>
-                </div>
-
-                <div class="bg-yellow-200 rounded-full relative p-1">
-                    <input
-                        class="rounded-lg px-2 outline-none bg-transparent"
-                        type="text"
-                        placeholder="Search"
-                    />
-                    <button class="absolute right-3" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                <div class="menu-btn text-2xl md:hidden cursor-pointer z-50">
-                    <i class="fas fa-bars"></i>
-                </div>
-
-                <!-- mobile view -->
-                <ul
-                    class="
-                        mobile-menu
-                        md:hidden
-                        fixed
-                        h-screen
-                        w-full
-                        -right-full
-                        top-0
-                        bg-white
-                        text-center
-                        pt-20
-                        transition-all
-                        duration-300
-                    "
-                >
-                    <li class="block">
-                        <a
-                            href="#home"
-                            class="menu-item inline-block my-5 text-2xl"
-                            >Home</a
-                        >
-                    </li>
-                    <li class="block">
-                        <a
-                            href="#about"
-                            class="menu-item inline-block my-5 text-2xl"
-                            >About</a
-                        >
-                    </li>
-                    <li class="block">
-                        <a
-                            href="#skills"
-                            class="menu-item inline-block my-5 text-2xl"
-                            >Skills</a
-                        >
-                    </li>
-                    <li class="block">
-                        <a
-                            href="#experience"
-                            class="menu-item inline-block my-5 text-2xl"
-                            >Experience</a
-                        >
-                    </li>
-                    <li class="block">
-                        <a
-                            href="#education"
-                            class="menu-item inline-block my-5 text-2xl"
-                            >Education</a
-                        >
-                    </li>
-                    <li class="block">
-                        <a
-                            href="#projects"
-                            class="menu-item inline-block my-5 text-2xl"
-                            >Projects</a
-                        >
-                    </li>
-                    <li class="block">
-                        <a
-                            href="#contact"
-                            class="menu-item inline-block my-5 text-2xl"
-                            >Contact</a
-                        >
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <section class="hero-section font-ubuntu pb-20">
-            <div
-                class="
-                    bg-gray-100
-                    max-w-screen-2xl
-                    mx-auto
-                    flex flex-col-reverse
-                    sm:flex-row
-                    justify-center
-                    items-center
-                    min-h-screen
-                    md:space-x-10
-                    lg:space-x-20
-                "
-            >
-                <div
-                    class="
-                        flex-1
-                        space-y-5
-                        sm:space-y-10
-                        pl-4
-                        lg:pl-24
-                        p-5
-                        lg:p-0
-                    "
-                >
-                    <a
-                        class="
-                            bg-secondary
-                            px-6
-                            py-2
-                            text-white
-                            rounded-full
-                            cursor-pointer
-                        "
-                    >
-                        Lorem, ipsum.
-                    </a>
-
-                    <div
-                        class="
-                            font-ubuntu
-                            text-xl
-                            sm:text-2xl
-                            md:text-3xl
-                            lg:text-4xl
-                            font-bold
-                        "
-                    >
-                        Lorem ipsum dolor sit amet adipisicing elit. Quos,
-                        harum?
-                    </div>
-                    <div class="font-poppins text-sm">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Et fuga repudiandae numquam? Ipsam officia
-                        repudiandae minus eligendi. Ex, recusandae quis?
-                    </div>
-
-                    <div class="flex space-x-5 items-center text-sm">
-                        <div
-                            class="h-10 w-10 ring-2 ring-offset-2 rounded-full"
-                        >
-                            <img
-                                class="object-cover rounded-full h-full w-full"
-                                src="./assets/avatar.jpg"
-                                alt="avatar"
-                            />
-                        </div>
-                        <div>
-                            <div>
-                                By
-                                <span class="font-medium">Lorem, ipsum.</span>
-                            </div>
-                            <div>February 29, 2024</div>
-                        </div>
-                    </div>
-
-                    <div class="w-full h-0.5 bg-secondary"></div>
-
-                    <div class="flex items-center justify-between text-sm">
-                        <div class="flex items-center space-x-2">
-                            <div class="bg-red-300 rounded-xl">
-                                <i class="far fa-bookmark p-3"></i>
-                            </div>
-                            <span>2 min read</span>
-                        </div>
-
-                        <div class="flex space-x-2">
-                            <div class="bg-yellow-200 rounded-full px-3 py-2">
-                                <i class="far fa-eye pr-1"></i>
-                                <span>5.7k</span>
-                            </div>
-                            <div class="bg-red-300 rounded-full px-3 py-2">
-                                <i class="far fa-heart pr-1"></i>
-                                <span>4.1k</span>
-                            </div>
-
-                            <div class="bg-yellow-200 rounded-full px-3 py-2">
-                                <i class="far fa-comments pr-1"></i>
-                                <span>2.1k</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-1">
-                    <img
-                        class="
-                            object-cover
-                            h-screen
-                            w-full
-                            rounded-xl
-                            md:rounded-none
-                        "
-                        src="./assets/hero_image.jpg"
-                        alt="hero_image"
-                    />
-                </div>
-            </div>
-        </section>
-
-        <section class="trending max-w-6xl mx-auto px-4 py-10">
-            <div class="py-10">
-                <div class="flex justify-between items-center">
-                    <div class="text-3xl font-ubuntu font-semibold">
-                        Trending Topics
-                    </div>
-                    <div class="flex space-x-4 text-gray-300">
-                        <button class="carouselPrev hover:text-gray-900">
-                            <i class="fas fa-chevron-left fa-lg"></i>
-                        </button>
-                        <button class="carouselNext hover:text-gray-900">
-                            <i class="fas fa-chevron-right fa-lg"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="inline-flex space-x-2">
-                    <div class="bg-yellow-300 h-1 w-5 rounded-full"></div>
-                    <div class="bg-red-500 h-1 w-20 rounded-full"></div>
-                    <div class="bg-yellow-300 h-1 w-5 rounded-full"></div>
-                </div>
-            </div>
-
-            <div class="owl-carousel owl-theme">
-                <div
-                    class="
-                        h-80
-                        bg-no-repeat bg-cover bg-center
-                        flex
-                        justify-center
-                        items-end
-                        item
-                    "
-                    style="
-                        background-image: url('./assets/trending/lukasz-szmigiel-unsplash.jpg');
-                    "
-                >
-                    <div class="p-10">
-                        <a
-                            class="
-                                bg-secondary
-                                hover:bg-red-500
-                                text-white
-                                font-medium
-                                px-8
-                                py-3
-                                rounded-full
-                                transition-all
-                                duration-300
-                                cursor-pointer
-                            "
-                            >Lorem, ipsum.</a
-                        >
-                    </div>
-                </div>
-                <div
-                    class="
-                        h-80
-                        bg-no-repeat bg-cover bg-center
-                        flex
-                        justify-center
-                        items-end
-                        item
-                    "
-                    style="
-                        background-image: url('./assets/trending/jannis-brandt-unsplash.jpg');
-                    "
-                >
-                    <div class="p-10">
-                        <a
-                            class="
-                                bg-secondary
-                                hover:bg-red-500
-                                text-white
-                                font-medium
-                                px-8
-                                py-3
-                                rounded-full
-                                transition-all
-                                duration-300
-                                cursor-pointer
-                            "
-                            >Lorem, ipsum.</a
-                        >
-                    </div>
-                </div>
-                <div
-                    class="
-                        h-80
-                        bg-no-repeat bg-cover bg-center
-                        flex
-                        justify-center
-                        items-end
-                        item
-                    "
-                    style="
-                        background-image: url('./assets/trending/joanna-kosinska-unsplash.jpg');
-                    "
-                >
-                    <div class="p-10">
-                        <a
-                            class="
-                                bg-secondary
-                                hover:bg-red-500
-                                text-white
-                                font-medium
-                                px-8
-                                py-3
-                                rounded-full
-                                transition-all
-                                duration-300
-                                cursor-pointer
-                            "
-                            >Lorem, ipsum.</a
-                        >
-                    </div>
-                </div>
-                <div
-                    class="
-                        h-80
-                        bg-no-repeat bg-cover bg-center
-                        flex
-                        justify-center
-                        items-end
-                        item
-                    "
-                    style="
-                        background-image: url('./assets/trending/markus-spiske-unsplash.jpg');
-                    "
-                >
-                    <div class="p-10">
-                        <a
-                            class="
-                                bg-secondary
-                                hover:bg-red-500
-                                text-white
-                                font-medium
-                                px-8
-                                py-3
-                                rounded-full
-                                transition-all
-                                duration-300
-                                cursor-pointer
-                            "
-                            >Lorem, ipsum.</a
-                        >
-                    </div>
-                </div>
-                <div
-                    class="
-                        h-80
-                        bg-no-repeat bg-cover bg-center
-                        flex
-                        justify-center
-                        items-end
-                        item
-                    "
-                    style="
-                        background-image: url('./assets/trending/luca-bravo-unsplash.jpg');
-                    "
-                >
-                    <div class="p-10">
-                        <a
-                            class="
-                                bg-secondary
-                                hover:bg-red-500
-                                text-white
-                                font-medium
-                                px-8
-                                py-3
-                                rounded-full
-                                transition-all
-                                duration-300
-                                cursor-pointer
-                            "
-                            >Lorem, ipsum.</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="featured max-w-6xl mx-auto px-4 py-10">
             <div class="py-10">
                 <div>
@@ -483,7 +43,7 @@
                         duration-300
                     "
                     style="
-                        background-image: url('./assets/featured/djordje-vukojicic-unsplash.jpg');
+                        background-image: url('../assets/featured/djordje-vukojicic-unsplash.jpg');
                     "
                 >
                     <div
@@ -639,7 +199,7 @@
                         duration-300
                     "
                     style="
-                        background-image: url('./assets/featured/karsten-winegeart-unsplash.jpg');
+                        background-image: url('../assets/featured/karsten-winegeart-unsplash.jpg');
                     "
                 >
                     <div
@@ -795,7 +355,7 @@
                         duration-300
                     "
                     style="
-                        background-image: url('./assets/featured/rizky-subagja-unsplash.jpg');
+                        background-image: url('../assets/featured/rizky-subagja-unsplash.jpg');
                     "
                 >
                     <div
@@ -951,7 +511,7 @@
                         duration-300
                     "
                     style="
-                        background-image: url('./assets/featured/soomal-shumaila-unsplash.jpg');
+                        background-image: url('../assets/featured/soomal-shumaila-unsplash.jpg');
                     "
                 >
                     <div
@@ -1107,7 +667,7 @@
                         duration-300
                     "
                     style="
-                        background-image: url('./assets/featured/taylor-smith-unsplash.jpg');
+                        background-image: url('../assets/featured/taylor-smith-unsplash.jpg');
                     "
                 >
                     <div
@@ -1245,107 +805,9 @@
             </div>
         </section>
 
-        <section class="about max-w-6xl mx-auto px-4 py-10">
-            <div class="py-10">
-                <div>
-                    <div class="text-3xl font-ubuntu font-semibold">About</div>
-                </div>
-                <div class="inline-flex space-x-2">
-                    <div class="bg-yellow-300 h-1 w-5 rounded-full"></div>
-                    <div class="bg-red-500 h-1 w-20 rounded-full"></div>
-                    <div class="bg-yellow-300 h-1 w-5 rounded-full"></div>
-                </div>
-            </div>
-            <div
-                class="
-                    font-poppins
-                    flex flex-wrap
-                    items-center
-                    space-y-5
-                    sm:space-y-0
-                    flex-col-reverse
-                    sm:flex-row
-                "
-            >
-                <div class="space-y-5 text-xs w-full sm:w-1/2 md:pr-5">
-                    <div class="text-lg font-semibold">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Modi, qui!
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sint, in ea incidunt asperiores mollitia nam consequatur
-                        exercitationem commodi aliquid sapiente eum similique
-                        tenetur accusamus fuga perferendis architecto eos ipsum
-                        quae.
-                    </p>
-                    <div class="flex flex-col space-y-2">
-                        <div class="flex items-center space-x-5">
-                            <div
-                                class="
-                                    h-2
-                                    w-2
-                                    rounded-full
-                                    bg-primary
-                                    ring-1 ring-red-300 ring-offset-1
-                                "
-                            ></div>
-                            <div><i>Lorem ipsum dolor sit amet.</i></div>
-                        </div>
-                        <div class="flex items-center space-x-5">
-                            <div
-                                class="
-                                    h-2
-                                    w-2
-                                    rounded-full
-                                    bg-primary
-                                    ring-1 ring-red-300 ring-offset-1
-                                "
-                            ></div>
-                            <div><i>Lorem ipsum dolor sit amet.</i></div>
-                        </div>
-                    </div>
-
-                    <button
-                        class="
-                            bg-primary
-                            px-5
-                            py-2
-                            text-center text-white text-base
-                            font-medium
-                            rounded-full
-                        "
-                        href="#"
-                    >
-                        Read More
-                    </button>
-                </div>
-                <div class="w-full sm:w-1/2">
-                    <div class="w-full h-full">
-                        <img
-                            class="
-                                w-full
-                                h-full
-                                bg-center bg-cover
-                                rounded-lg
-                                sm:rounded-none
-                                mb-5
-                                sm:mb-0
-                            "
-                            src="./assets/about_blog.jpg"
-                            alt="about_blog"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script
             src="https://kit.fontawesome.com/1ae402c3f5.js"
             crossorigin="anonymous"
         ></script>
-        <script src="./scripts/owl.carousel.min.js"></script>
-        <script src="./scripts/script.js"></script>
     </body>
 </html>
