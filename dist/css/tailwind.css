@@ -32287,6 +32287,14 @@ video {
   --tw-grayscale: grayscale(100%);
 }
 
+.hover\:grayscale-0:hover{
+  --tw-grayscale: grayscale(0);
+}
+
+.hover\:grayscale:hover{
+  --tw-grayscale: grayscale(100%);
+}
+
 .hue-rotate-0{
   --tw-hue-rotate: hue-rotate(0deg);
 }
@@ -64014,6 +64022,14 @@ video {
     --tw-grayscale: grayscale(100%);
   }
 
+  .sm\:hover\:grayscale-0:hover{
+    --tw-grayscale: grayscale(0);
+  }
+
+  .sm\:hover\:grayscale:hover{
+    --tw-grayscale: grayscale(100%);
+  }
+
   .sm\:hue-rotate-0{
     --tw-hue-rotate: hue-rotate(0deg);
   }
@@ -95735,6 +95751,14 @@ video {
   }
 
   .md\:grayscale{
+    --tw-grayscale: grayscale(100%);
+  }
+
+  .md\:hover\:grayscale-0:hover{
+    --tw-grayscale: grayscale(0);
+  }
+
+  .md\:hover\:grayscale:hover{
     --tw-grayscale: grayscale(100%);
   }
 
@@ -127462,6 +127486,14 @@ video {
     --tw-grayscale: grayscale(100%);
   }
 
+  .lg\:hover\:grayscale-0:hover{
+    --tw-grayscale: grayscale(0);
+  }
+
+  .lg\:hover\:grayscale:hover{
+    --tw-grayscale: grayscale(100%);
+  }
+
   .lg\:hue-rotate-0{
     --tw-hue-rotate: hue-rotate(0deg);
   }
@@ -159186,6 +159218,14 @@ video {
     --tw-grayscale: grayscale(100%);
   }
 
+  .xl\:hover\:grayscale-0:hover{
+    --tw-grayscale: grayscale(0);
+  }
+
+  .xl\:hover\:grayscale:hover{
+    --tw-grayscale: grayscale(100%);
+  }
+
   .xl\:hue-rotate-0{
     --tw-hue-rotate: hue-rotate(0deg);
   }
@@ -190907,6 +190947,14 @@ video {
   }
 
   .\32xl\:grayscale{
+    --tw-grayscale: grayscale(100%);
+  }
+
+  .\32xl\:hover\:grayscale-0:hover{
+    --tw-grayscale: grayscale(0);
+  }
+
+  .\32xl\:hover\:grayscale:hover{
     --tw-grayscale: grayscale(100%);
   }
 
