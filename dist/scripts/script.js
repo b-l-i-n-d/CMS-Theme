@@ -1,11 +1,18 @@
 $(document).ready(() => {
     $(".owl-carousel").owlCarousel();
 
-    $('.carouselPrev').click(() => {
-        $('.owl-carousel').trigger('prev.owl.carousel');
+    $('.carouselPrev').eq(0).click(() => {
+        $('.owl-carousel').eq(0).trigger('prev.owl.carousel');
     });
-    $('.carouselNext').click(() => {
-        $('.owl-carousel').trigger('next.owl.carousel');
+    $('.carouselNext').eq(0).click(() => {
+        $('.owl-carousel').eq(0).trigger('next.owl.carousel');
+    });
+
+    $('.carouselPrev').eq(1).click(() => {
+        $('.owl-carousel').eq(1).trigger('prev.owl.carousel');
+    });
+    $('.carouselNext').eq(1).click(() => {
+        $('.owl-carousel').eq(1).trigger('next.owl.carousel');
     });
 });
 
