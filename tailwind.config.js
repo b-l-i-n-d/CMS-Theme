@@ -24,7 +24,7 @@ module.exports = {
     variants: {
         extend: {
             display: ['group-hover'],
-            backgroundImage: ['hover'],
+            backgroundImage: ['hover', 'group-hover'],
             grayscale: ['hover'],
         },
     },
