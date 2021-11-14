@@ -1,18 +1,21 @@
 $(document).ready(() => {
     $(".owl-carousel").owlCarousel();
 
-    $('.trendingPrev').click(() => {
-        $('.trending-carousel').trigger('prev.owl.carousel');
+    $(".trendingPrev").click(() => {
+        $(".trending-carousel").trigger("prev.owl.carousel");
     });
-    $('.trendingNext').click(() => {
-        $('.trending-carousel').trigger('next.owl.carousel');
+    $(".trendingNext").click(() => {
+        $(".trending-carousel").trigger("next.owl.carousel");
     });
 
-    $('.memberPrev').click(() => {
-        $('.member-carousel').trigger('prev.owl.carousel');
+    $(".memberPrev").click(() => {
+        $(".member-carousel").trigger("prev.owl.carousel");
     });
-    $('.memberNext').click(() => {
-        $('.member-carousel').trigger('next.owl.carousel');
+    $(".memberNext").click(() => {
+        $(".member-carousel").trigger("next.owl.carousel");
+    });
+    $(".testimonialNext").click(() => {
+        $(".testimonial-carousel").trigger("next.owl.carousel");
     });
 });
 
@@ -29,7 +32,7 @@ $(".trending-carousel").owlCarousel({
             items: 2,
         },
         768: {
-            items:3,
+            items: 3,
         },
         1024: {
             items: 4,
@@ -50,10 +53,20 @@ $(".member-carousel").owlCarousel({
             items: 2,
         },
         768: {
-            items:3,
+            items: 3,
         },
         1024: {
             items: 4,
         },
     },
+});
+
+$(".testimonial-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    dotsEach: true,
+    stagePadding: 0,
+    autoplay: true,
+    autoplaySpeed: 500,
+    autoplayHoverPause: true,
 });
