@@ -94,16 +94,16 @@
         block;
     }
 
-    /* features */
+    /* card ** faetures ** services  */
 
-    .features-container {
+    .card-group {
         @apply flex flex-wrap
         justify-center
         font-poppins
         text-center;
     }
 
-    .features-item-container {
+    .card {
         @apply flex
         w-full
         sm:w-1/2
@@ -113,7 +113,7 @@
         cursor-pointer;
     }
 
-    .features-item {
+    .card-item {
         @apply flex-1 flex-col
         shadow-2xl
         rounded-2xl
@@ -121,24 +121,22 @@
         space-y-10
         transform
         transition-all
-        duration-300
-        hover:bg-gradient-to-r
-        from-red-400
-        to-yellow-400
-        hover:-translate-y-3;
+        duration-300;
     }
 
-    .features-icon {
+    .card-icon {
         @apply bg-yellow-200
         p-5
-        rounded-2xl;
+        rounded-2xl
+        transition-all
+        duration-300;
     }
 
-    .features-title {
+    .card-title {
         @apply font-semibold text-lg;
     }
 
-    .features-desc {
+    .card-desc {
         @apply flex-1 text-sm;
     }
 
@@ -180,57 +178,5 @@
         rounded-full
         bg-secondary
         hover:bg-primary;
-    }
-
-    /* services */
-
-    .service-container {
-        @apply flex flex-wrap
-        justify-center
-        font-poppins
-        text-center;
-    }
-
-    .service-item-container {
-        @apply flex w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3;
-    }
-
-    .service-item {
-        @apply flex-1 flex-col
-        shadow-2xl
-        rounded-2xl
-        p-5
-        space-y-10
-        transform
-        transition-all
-        duration-300
-        border-b-8 border-transparent
-        hover:-translate-y-3 hover:border-purple-300;
-    }
-
-    .service-item-icon {
-        @apply p-5
-        bg-purple-200
-        border-2 border-purple-400
-        rounded-2xl
-        transition-all
-        duration-300
-        group-hover:bg-gradient-to-tr
-        from-blue-600
-        via-purple-600
-        group-hover:text-white;
-    }
-
-    .service-name {
-        @apply text-xl
-        font-semibold
-        text-transparent
-        bg-clip-text bg-gradient-to-tr
-        from-blue-600
-        via-purple-600;
-    }
-
-    .service-desc {
-        @apply text-sm flex-1;
     }
 }
