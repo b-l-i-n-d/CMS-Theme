@@ -140,24 +140,22 @@
         @apply flex-1 text-sm;
     }
 
-    /* members */
+    /* carousel ** members */
 
-    .members-item-container {
+    .carousel-item {
         @apply flex flex-col
         rounded-2xl
         bg-gray-200
-        duration-300
-        border-b-8
-        hover:bg-red-200 hover:border-primary;
+        duration-300;
     }
 
-    .members-image {
+    .carousel-image {
         @apply h-80
         rounded-t-2xl
         bg-cover bg-center bg-no-repeat;
     }
 
-    .members-lower-container {
+    .carousel-body {
         @apply p-3 space-y-2 flex-1;
     }
 
