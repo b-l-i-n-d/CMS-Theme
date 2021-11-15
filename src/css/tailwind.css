@@ -115,6 +115,7 @@
 
     .card-item {
         @apply flex-1 flex-col
+        bg-white
         shadow-2xl
         rounded-2xl
         p-5

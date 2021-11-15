@@ -17,6 +17,22 @@ $(document).ready(() => {
     $(".testimonialNext").click(() => {
         $(".testimonial-carousel").trigger("next.owl.carousel");
     });
+
+    const counterUp = window.counterUp.default;
+    const el = document.querySelectorAll(".counter");
+    el.forEach(element => {
+        new Waypoint({
+            element: element,
+            handler: function () {
+                counterUp(element, {
+                    duration: 2000,
+                    delay: 16,
+                });
+                this.destroy();
+            },
+            offset: "bottom-in-view",
+        });
+    });
 });
 
 $(".trending-carousel").owlCarousel({
