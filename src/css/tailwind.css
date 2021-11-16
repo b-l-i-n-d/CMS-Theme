@@ -12,6 +12,72 @@
         hover:border-primary;
     }
 
+    /* card ** faetures ** services  */
+
+    .card-group {
+        @apply flex flex-wrap
+        justify-center
+        font-poppins
+        text-center;
+    }
+
+    .card {
+        @apply flex
+        w-full
+        sm:w-1/2
+        md:w-1/3
+        lg:w-1/4
+        p-3
+        cursor-pointer;
+    }
+
+    .card-item {
+        @apply flex-1 flex-col
+        bg-white
+        shadow-2xl
+        rounded-2xl
+        p-5
+        space-y-10
+        transform
+        transition-all
+        duration-300;
+    }
+
+    .card-icon {
+        @apply bg-yellow-200
+        p-5
+        rounded-2xl
+        transition-all
+        duration-300;
+    }
+
+    .card-title {
+        @apply font-semibold text-lg;
+    }
+
+    .card-desc {
+        @apply flex-1 text-sm;
+    }
+
+    /* carousel ** members */
+
+    .carousel-item {
+        @apply flex flex-col
+        rounded-2xl
+        bg-gray-200
+        duration-300;
+    }
+
+    .carousel-image {
+        @apply h-80
+        rounded-t-2xl
+        bg-cover bg-center bg-no-repeat;
+    }
+
+    .carousel-body {
+        @apply p-3 space-y-2 flex-1;
+    }
+
     /* trending */
 
     .trending-item {
@@ -92,72 +158,6 @@
         bg-white
         hover:bg-gray-200
         block;
-    }
-
-    /* card ** faetures ** services  */
-
-    .card-group {
-        @apply flex flex-wrap
-        justify-center
-        font-poppins
-        text-center;
-    }
-
-    .card {
-        @apply flex
-        w-full
-        sm:w-1/2
-        md:w-1/3
-        lg:w-1/4
-        p-3
-        cursor-pointer;
-    }
-
-    .card-item {
-        @apply flex-1 flex-col
-        bg-white
-        shadow-2xl
-        rounded-2xl
-        p-5
-        space-y-10
-        transform
-        transition-all
-        duration-300;
-    }
-
-    .card-icon {
-        @apply bg-yellow-200
-        p-5
-        rounded-2xl
-        transition-all
-        duration-300;
-    }
-
-    .card-title {
-        @apply font-semibold text-lg;
-    }
-
-    .card-desc {
-        @apply flex-1 text-sm;
-    }
-
-    /* carousel ** members */
-
-    .carousel-item {
-        @apply flex flex-col
-        rounded-2xl
-        bg-gray-200
-        duration-300;
-    }
-
-    .carousel-image {
-        @apply h-80
-        rounded-t-2xl
-        bg-cover bg-center bg-no-repeat;
-    }
-
-    .carousel-body {
-        @apply p-3 space-y-2 flex-1;
     }
 
     .members-name {
