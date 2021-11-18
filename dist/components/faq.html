@@ -36,35 +36,102 @@
                 </div>
 
                 <!-- accordion -->
-                <div class="max-w-4xl mx-auto accordion">
-                    <!-- faq 1 -->
-
+                <div class="max-w-4xl mx-auto accordian font-poppins space-y-5">
+                    <!-- accordion 1 -->
                     <div class="accordion-card">
-                        <div
-                            class="
-                                flex
-                                justify-between
-                                cursor-pointer
-                                accordion-header
-                            "
-                        >
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Reprehenderit, in.
-                            </p>
-
-                            <i class="fas fa-angle-down rotate-0"></i>
+                        <!-- question -->
+                        <div class="accordion-card-header">
+                            <div class="relative">
+                                Lorem ipsum dolor sit amet.
+                            </div>
+                            <i
+                                class="
+                                    fa fa-angle-down
+                                    duration-300
+                                    transform
+                                    rotate-0
+                                "
+                            ></i>
                         </div>
-                        <div class="accordion-body">
+                        <!-- summery -->
+                        <div class="accordion-card-body hidden">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Quas ipsum sequi ipsa debitis!
-                                Rerum, esse! Reiciendis doloribus cupiditate
-                                obcaecati incidunt omnis enim magnam voluptatem?
-                                Earum modi recusandae illo libero officia?
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniamLorem ipsum dolor sit amet,
+                                consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam
                             </p>
                         </div>
                     </div>
+
+                    <!-- accordion 2 -->
+                    <div class="accordion-card">
+                        <!-- question -->
+                        <div class="accordion-card-header">
+                            <div class="relative">
+                                Lorem ipsum dolor sit amet consectetur.
+                            </div>
+                            <i
+                                class="
+                                    fa fa-angle-down
+                                    duration-300
+                                    transform
+                                    rotate-0
+                                "
+                            ></i>
+                        </div>
+                        <!-- summery -->
+                        <div class="accordion-card-body hidden">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniamLorem ipsum dolor sit amet,
+                                consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- accordion 3 -->
+                    <div class="accordion-card">
+                        <!-- question -->
+                        <div class="accordion-card-header">
+                            <div class="relative">
+                                Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Beatae, tempore?
+                            </div>
+                            <i
+                                class="
+                                    fa fa-angle-down
+                                    duration-300
+                                    transform
+                                    rotate-0
+                                "
+                            ></i>
+                        </div>
+                        <!-- summery -->
+                        <div class="accordion-card-body hidden">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniamLorem ipsum dolor sit amet,
+                                consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center py-10 text-gray-500 space-y-3">
+                    <p class="text-4xl font-medium">Still have questions?</p>
+                    <p class="text-xl">Feel free to contact us</p>
                 </div>
             </div>
         </section>
@@ -76,32 +143,39 @@
         ></script>
         <script>
             $(document).ready(function () {
-                $(".accordion-header").click(function () {
+                $(".accordion-card-header").click(function () {
                     // self clicking close
-                    if ($(this).next(".accordion-body").hasClass("active")) {
+                    if (
+                        $(this).next(".accordion-card-body").hasClass("active")
+                    ) {
                         $(this)
-                            .next(".accordion-body")
+                            .next(".accordion-card-body")
                             .removeClass("active")
                             .slideUp();
+                        $(this).removeClass("font-semibold text-blue-500");
                         $(this)
                             .children("i")
                             .removeClass("rotate-180")
                             .addClass("rotate-0");
                     } else {
-                        $(".accordion-card .accordion-body")
+                        $(".accordion-card .accordion-card-body")
                             .removeClass("active")
                             .slideUp();
-                        $(".accordion-card .accordion-header i")
-                            .removeClass("rotate-0")
-                            .addClass("rotate-180");
+                        $(".accordion-card .accordion-card-header").removeClass(
+                            "font-semibold text-blue-500"
+                        );
+                        $(".accordion-card .accordion-card-header i")
+                            .removeClass("rotate-180")
+                            .addClass("rotate-0");
+                        $(this).addClass("font-semibold text-blue-500");
                         $(this)
-                            .next(".accordion-body")
+                            .next(".accordion-card-body")
                             .addClass("active")
                             .slideDown();
                         $(this)
                             .children("i")
-                            .removeClass("rotate-180")
-                            .addClass("rotate-0");
+                            .removeClass("rotate-0")
+                            .addClass("rotate-180");
                     }
                 });
             });

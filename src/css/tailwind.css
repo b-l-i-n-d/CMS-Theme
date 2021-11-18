@@ -78,6 +78,27 @@
         @apply p-3 space-y-2 flex-1;
     }
 
+    /* accordion card */
+
+    .accordion-card {
+        @apply p-5
+        border-2 border-gray-200
+        rounded-lg;
+    }
+
+    .accordion-card-header {
+        @apply cursor-pointer
+        flex
+        justify-between
+        items-center
+        relative font-medium transition-all duration-300 text-gray-600
+        hover:text-blue-500;
+    }
+
+    .accordion-card-body {
+        @apply pt-3 text-sm text-gray-500 leading-relaxed;
+    }
+
     /* trending */
 
     .trending-item {
