@@ -31,14 +31,26 @@
                             md:w-2/5
                             p-5
                             text-white text-center
+                            group
                         "
                         style="
                             background-image: url('../assets/portfolio.jpg');
                             height: 500px;
                         "
                     >
-                        <div class="font-bold text-4xl">Lorem, ipsum.</div>
-                        <div class="flex justify-between items-center">
+                        <div
+                            class="font-bold text-4xl hidden group-hover:block"
+                        >
+                            Lorem, ipsum.
+                        </div>
+                        <div
+                            class="
+                                justify-between
+                                items-center
+                                hidden
+                                group-hover:flex
+                            "
+                        >
                             <div class="space-x-5">
                                 <a class="hover:text-red-300" href="#"
                                     ><i class="fab fa-facebook fa-lg"></i
