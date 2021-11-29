@@ -1003,6 +1003,25 @@ video {
   padding: 0.5rem;
 }
 
+/* gallery */
+
+.gallery-sizer {
+  width: 100%;
+  padding: 1.25rem;
+}
+
+@media (min-width: 640px){
+  .gallery-sizer{
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px){
+  .gallery-sizer{
+    width: 33.333333%;
+  }
+}
+
 .sr-only{
   position: absolute;
   width: 1px;

@@ -20,7 +20,7 @@ $(document).ready(() => {
 
     const counterUp = window.counterUp.default;
     const el = document.querySelectorAll(".counter");
-    el.forEach(element => {
+    el.forEach((element) => {
         new Waypoint({
             element: element,
             handler: function () {
@@ -32,6 +32,22 @@ $(document).ready(() => {
             },
             offset: "bottom-in-view",
         });
+    });
+
+    $(".gallery-flex").isotope({
+        itemSelector: ".gallery-item",
+        percentPosition: true,
+
+        // layout mode options
+        masonry: {
+            columnWidth: 0,
+            horizontalOrder: true,
+        },
+    });
+
+    $(".filter-btns").on("click", "div", function () {
+        var filterValue = $(this).attr("data-filter");
+        $(".gallery-flex").isotope({ filter: filterValue });
     });
 });
 
