@@ -28,5 +28,7 @@ module.exports = {
             grayscale: ['hover'],
         },
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/aspect-ratio'),
+    ],
 };
