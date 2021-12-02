@@ -102,3 +102,14 @@ $(".testimonial-carousel").owlCarousel({
     autoplaySpeed: 500,
     autoplayHoverPause: true,
 });
+
+$(".blog-breaking-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: false,
+    dots: false,
+    stagePadding: 0,
+    autoplay: true,
+    autoplaySpeed: 500,
+    autoplayHoverPause: true,
+});
