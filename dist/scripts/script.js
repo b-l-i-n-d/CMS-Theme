@@ -14,8 +14,16 @@ $(document).ready(() => {
     $(".memberNext").click(() => {
         $(".member-carousel").trigger("next.owl.carousel");
     });
+
     $(".testimonialNext").click(() => {
         $(".testimonial-carousel").trigger("next.owl.carousel");
+    });
+
+    $(".blogThreeColumnPrev").click(() => {
+        $(".blog-three-column-carousel").trigger("prev.owl.carousel");
+    });
+    $(".blogThreeColumnNext").click(() => {
+        $(".blog-three-column-carousel").trigger("next.owl.carousel");
     });
 
     const counterUp = window.counterUp.default;
@@ -112,4 +120,22 @@ $(".blog-breaking-carousel").owlCarousel({
     autoplay: true,
     autoplaySpeed: 500,
     autoplayHoverPause: true,
+});
+
+$(".blog-three-column-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: false,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1,
+        },
+        640: {
+            items: 2,
+        },
+        768: {
+            items: 3,
+        },
+    },
 });
