@@ -26,6 +26,7 @@ module.exports = {
             display: ['group-hover'],
             backgroundImage: ['hover', 'group-hover'],
             grayscale: ['hover'],
+            scale: ['group-hover']
         },
     },
     plugins: [
