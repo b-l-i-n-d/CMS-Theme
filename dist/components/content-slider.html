@@ -37,7 +37,7 @@
             <!-- Container -->
             <div class="w-screen">
                 <div class="font-ubuntu relative">
-                    <div class="owl-carousel content-slider">
+                    <div class="owl-carousel content-carousel">
                         <!-- slide 1 -->
 
                         <div
@@ -282,7 +282,7 @@
         <script src="../scripts/owl.carousel.min.js"></script>
         <script>
             $(document).ready(() => {
-                $(".content-slider").owlCarousel({
+                $(".content-carousel").owlCarousel({
                     items: 1,
                     loop: true,
                     dotsEach: true,
@@ -293,10 +293,10 @@
                 });
 
                 $(".contentPrev").click(() => {
-                    $(".content-slider").trigger("prev.owl.carousel");
+                    $(".content-carousel").trigger("prev.owl.carousel");
                 });
                 $(".contentNext").click(() => {
-                    $(".content-slider").trigger("next.owl.carousel");
+                    $(".content-carousel").trigger("next.owl.carousel");
                 });
             });
         </script>
