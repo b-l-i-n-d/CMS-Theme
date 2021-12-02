@@ -35,6 +35,7 @@
                         lg:p-0
                     "
                 >
+                    <!-- Title -->
                     <div
                         class="
                             font-ubuntu
@@ -45,25 +46,22 @@
                             font-bold
                         "
                     >
-                        Lorem ipsum dolor sit amet adipisicing elit. Quos,
-                        harum?
+                        Lorem ipsum dolor sit amet adipisicing elit.
+                        <!-- highlighted text -->
+                        <span class="text-secondary"> Quos, harum? </span>
                     </div>
-                    <div class="font-poppins text-sm">
+
+                    <!-- summery -->
+
+                    <div class="font-poppins text-lg">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Quaerat qui magni consequatur repellat perferendis dicta
                         quasi facere voluptas quia cum possimus odio expedita
                         itaque officia blanditiis ipsam, repellendus hic
-                        consectetur atque in natus deleniti! Praesentium quod
-                        quasi enim officiis nihil minima quo aspernatur ea
-                        velit? Cumque obcaecati, tempora animi dicta nam
-                        possimus incidunt ex quae cum, in, minima commodi
-                        suscipit fugit illo repellat odio eum ab saepe provident
-                        qui quod mollitia placeat fuga. Voluptatum reprehenderit
-                        a, id quia ea quisquam, aspernatur dolorem voluptatibus
-                        ex amet dicta. Temporibus autem praesentium fuga,
-                        laudantium saepe, blanditiis voluptas maiores magni quae
-                        eaque iste optio?
+                        consectetur atque in natus deleniti!
                     </div>
+
+                    <!-- btn -->
 
                     <button
                         class="
@@ -79,65 +77,33 @@
                     >
                         Lorem.
                     </button>
-
-                    <!-- <div class="flex space-x-5 items-center text-sm">
-                        <div
-                            class="h-10 w-10 ring-2 ring-offset-2 rounded-full"
-                        >
-                            <img
-                                class="object-cover rounded-full h-full w-full"
-                                src="../assets/avatar.jpg"
-                                alt="avatar"
-                            />
-                        </div>
-                        <div>
-                            <div>
-                                By
-                                <span class="font-medium">Lorem, ipsum.</span>
-                            </div>
-                            <div>February 29, 2024</div>
-                        </div>
-                    </div>
-
-                    <div class="w-full h-0.5 bg-secondary"></div>
-
-                    <div class="flex items-center justify-between text-sm">
-                        <div class="flex items-center space-x-2">
-                            <div class="bg-red-300 rounded-xl">
-                                <i class="far fa-bookmark p-3"></i>
-                            </div>
-                            <span>2 min read</span>
-                        </div>
-
-                        <div class="flex space-x-2">
-                            <div class="bg-yellow-200 rounded-full px-3 py-2">
-                                <i class="far fa-eye pr-1"></i>
-                                <span>5.7k</span>
-                            </div>
-                            <div class="bg-red-300 rounded-full px-3 py-2">
-                                <i class="far fa-heart pr-1"></i>
-                                <span>4.1k</span>
-                            </div>
-
-                            <div class="bg-yellow-200 rounded-full px-3 py-2">
-                                <i class="far fa-comments pr-1"></i>
-                                <span>2.1k</span>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
-                <div class="flex-1">
-                    <img
-                        class="
-                            object-cover
-                            h-screen
-                            w-full
-                            rounded-xl
-                            md:rounded-none
-                        "
-                        src="../assets/hero_image.jpg"
-                        alt="hero_image"
-                    />
+                <div
+                    class="
+                        flex-1 flex
+                        justify-center
+                        items-center
+                        sm:h-screen
+                        bg-center bg-cover bg-no-repeat
+                        w-full
+                        rounded-xl
+                        sm:rounded-none
+                    "
+                    style="background-image: url('../assets/hero_image.jpg')"
+                >
+                    <div class="h-96 sm:hidden"></div>
+                    <button>
+                        <i
+                            class="
+                                far
+                                fa-play-circle fa-2x
+                                hover:text-secondary
+                                p-4
+                                bg-white
+                                rounded-full
+                            "
+                        ></i>
+                    </button>
                 </div>
             </div>
         </section>
