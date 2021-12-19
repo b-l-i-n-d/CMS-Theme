@@ -4,19 +4,35 @@
 $font-Ubnuntu: "Ubuntu", sans-serif;
 $font-Poppins: "Poppins", sans-serif;
 
-$primary: #fe2638;
-$secondary: #ebb308;
+$primary-color: #fe2638;
+$secondary-color: #ebb308;
+$gray-color: #f1f5f9;
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5 {
+.title,
+.subtitle,
+.summary {
     font-family: $font-Ubnuntu;
+    margin: 0;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-weight: 500;
+}
+
+.summary {
+    font-size: 14px;
+}
+
+#hero-section {
+    background-color: $gray-color;
 }
 
 .text-highlight {
-    color: $secondary;
+    color: $secondary-color;
 }
 
 #hero-subtitle {
@@ -25,6 +41,36 @@ $secondary: #ebb308;
 }
 
 #hero-btn {
-    background: $secondary;
+    background: $secondary-color;
     font-weight: 500;
+    transition: all ease 0.3s;
+}
+
+#hero-btn:hover {
+    background: $primary-color;
+}
+
+#hero-img {
+    min-height: 50vh;
+}
+
+.img-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 384px;
+}
+
+section {
+    .secondary-h-line {
+        height: 4px;
+        width: 20px;
+        background-color: $secondary-color;
+    }
+
+    .primary-h-line {
+        height: 4px;
+        width: 80px;
+        background: $primary-color;
+    }
 }
