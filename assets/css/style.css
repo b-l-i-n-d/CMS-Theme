@@ -7,6 +7,10 @@
   margin: 0;
 }
 
+.content {
+  font-family: "Poppins", sans-serif;
+}
+
 .title {
   font-weight: 700;
 }
