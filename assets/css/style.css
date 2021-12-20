@@ -36,14 +36,14 @@
   font-weight: 400;
 }
 
-#hero-btn {
+.btn-hover {
   background: #ebb308;
   font-weight: 500;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
-#hero-btn:hover {
+.btn-hover:hover {
   background: #fe2638;
 }
 

@@ -44,13 +44,13 @@ $gray-color: #f1f5f9;
     font-weight: 400;
 }
 
-#hero-btn {
+.btn-hover {
     background: $secondary-color;
     font-weight: 500;
     transition: all ease 0.3s;
 }
 
-#hero-btn:hover {
+.btn-hover:hover {
     background: $primary-color;
 }
 
