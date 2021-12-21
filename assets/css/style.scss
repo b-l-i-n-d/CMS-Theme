@@ -41,6 +41,16 @@ body {
     background: $primary-color;
 }
 
+.btn-hover-primary {
+    background: $primary-color;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+
+.btn-hover-primary:hover {
+    background: $secondary-color;
+}
+
 .img-container {
     background-size: cover;
     background-position: center;
@@ -50,18 +60,6 @@ body {
 
 .text-highlight {
     color: $secondary-color;
-}
-
-.hero {
-    background-color: $gray-color;
-
-    .subtitle {
-        font-weight: 400;
-    }
-
-    .img {
-        min-height: 50vh;
-    }
 }
 
 section {
@@ -75,6 +73,31 @@ section {
         height: 4px;
         width: 80px;
         background: $primary-color;
+    }
+}
+
+// hero
+
+.hero {
+    background-color: $gray-color;
+
+    .subtitle {
+        font-weight: 400;
+    }
+
+    .img {
+        min-height: 50vh;
+    }
+}
+
+// left | right image
+
+.left-right-image {
+    .title {
+        font-weight: 700;
+    }
+    .summary {
+        font-size: 16px;
     }
 }
 
