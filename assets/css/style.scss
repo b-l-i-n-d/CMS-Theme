@@ -8,15 +8,15 @@ $primary-color: #fe2638;
 $secondary-color: #ebb308;
 $gray-color: #f1f5f9;
 
+body {
+    font-family: $font-Poppins;
+}
+
 .title,
 .subtitle,
 .summary {
     font-family: $font-Ubnuntu;
     margin: 0;
-}
-
-.content {
-    font-family: $font-Poppins;
 }
 
 .title {
@@ -31,19 +31,6 @@ $gray-color: #f1f5f9;
     font-size: 14px;
 }
 
-#hero-section {
-    background-color: $gray-color;
-}
-
-.text-highlight {
-    color: $secondary-color;
-}
-
-#hero-subtitle {
-    font-family: $font-Poppins;
-    font-weight: 400;
-}
-
 .btn-hover {
     background: $secondary-color;
     font-weight: 500;
@@ -54,15 +41,27 @@ $gray-color: #f1f5f9;
     background: $primary-color;
 }
 
-#hero-img {
-    min-height: 50vh;
-}
-
 .img-container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 384px;
+}
+
+.text-highlight {
+    color: $secondary-color;
+}
+
+.hero {
+    background-color: $gray-color;
+
+    .subtitle {
+        font-weight: 400;
+    }
+
+    .img {
+        min-height: 50vh;
+    }
 }
 
 section {
@@ -76,5 +75,61 @@ section {
         height: 4px;
         width: 80px;
         background: $primary-color;
+    }
+}
+
+// Swiper
+
+.swiper {
+    .swiper-pagination-bullet {
+        background: none !important;
+        border: 2px solid $primary-color !important;
+        border-radius: 25px;
+        outline: none;
+        transition: all 0.3s ease;
+        opacity: 100;
+    }
+
+    .swiper-pagination-bullet:hover,
+    .swiper-pagination-bullet-active {
+        background: $primary-color !important;
+        width: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        padding: 30px;
+        background: white;
+        color: black;
+        border-radius: 25px;
+        opacity: 20%;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        opacity: 100%;
+    }
+
+    .swiper-slide {
+        padding: 60px;
+    }
+
+    @media (min-width: 576px) {
+        .swiper-slide {
+            padding: 70px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .swiper-slide {
+            padding: 80px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .swiper-slide {
+            padding: 90px;
+        }
     }
 }
